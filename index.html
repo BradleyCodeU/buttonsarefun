@@ -1,0 +1,106 @@
+<html>
+    <head>
+		<title>Buttons Are Fun</title>
+        <style>
+          
+	          #mybutton {
+    	          opacity:0;
+            }
+            p{
+                background-color:green;
+                color:white;
+                width:100;
+                
+            }
+          #box1{
+            display:inline-block;
+            visibility:hidden;
+            background:green;
+            width:100;
+            height:100;
+          }
+          #box2{
+            display:inline-block;
+            background:#999;
+            width:100;
+            height:100;
+          }
+        </style>
+    </head>
+    <body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+        
+      <h1 id="bob">Score: </h1><h1 id="points2.0">0</h1>
+        <p id="steve">Some text goes here</p><br>
+        <p id="otherText">Some other text goes here</p><br>
+        <center id="myNumbers">1
+        2
+        3 4</center>
+        <a id="sara" onclick="score()">click me</a><br>
+        <button onclick="document.body.style='background-color:white';">Don't click me</button>
+
+        <button onclick="document.getElementById('otherText').style='background-color:pink';>Set Pink</button>
+ 	    
+      <button id="mybutton" onclick="appChild();">Append</button>
+      <button onclick="randomize();">Randomize</button>
+      <button onclick="alert('YOU HAVE FAILED ME FOR THE LAST TIME!!!!!!!!!!!!!!!!!!!!!!111!!!');">Fail</button>
+      <br>
+      <div id="box1">
+        This is box1
+      </div>
+      <div id="box2">
+        This is box2
+      </div>
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      
+  <script>
+    var points = 0;
+    
+    function score(){
+      points = points + 1;
+      points++;
+      document.getElementById("points2.0").innerHTML = points;
+    }
+      function appChild(){
+        var textnode = document.createTextNode(" "+randHex());
+        document.getElementById('myNumbers').appendChild(textnode);
+        document.getElementById('box1').style.visibility='visible';
+      }
+ 	    function randomize() {
+ 	        document.body.style='background-color:#'+randHex();
+ 	        document.getElementById('otherText').style='background-color:#'+randHex();
+          document.getElementById('box1').style.visibility='hidden';         
+ 	    }
+ 	    function randHex() {
+ 	        return Math.floor(Math.random() * 900)+100;
+ 	    }
+ 	    randomize();
+    
+    
+    
+ 	</script>
+ 	</body>
+</html>
