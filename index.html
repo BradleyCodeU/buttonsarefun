@@ -26,10 +26,7 @@
             height:100;
           }
         </style>
-    </head>
-    <body>
-	
-	<style>
+		<style>
       body{
         background-color:tan;
       }
@@ -37,6 +34,10 @@
         opacity:0;
       }
     </style>
+    </head>
+    <body>
+	
+	
 	
 	 <h1 id=h1>
       Find The Button That Changes The Background!
@@ -68,13 +69,7 @@
     <br>
     <br>
     <button id=hb type="button" onclick='document.getElementById("h1").innerHTML = "You Did It"; document.body.style.background = "tomato"'>Click Me!</button>
-	
-	
-	
-	
-	
-        
-      <h1 id="bob">Score: </h1><h1 id="points2.0">0</h1>
+      <h1 id="bob"><a onclick="score()">Score: </a></h1><h1 id="points2.0">0</h1>
         <p id="steve">Some text goes here</p><br>
         <p id="otherText">Some other text goes here</p><br>
         <center id="myNumbers">1
@@ -83,7 +78,7 @@
         <a id="sara" onclick="score()">click me</a><br>
         <button onclick="document.body.style='background-color:white';">Don't click me</button>
 
-        <button onclick="document.getElementById('otherText').style='background-color:pink';>Set Pink</button>
+        <button onclick="document.getElementById('otherText').style='background-color:pink';">Set Pink</button>
  	    
       <button id="mybutton" onclick="appChild();">Append</button>
       <button onclick="randomize();">Randomize</button>
