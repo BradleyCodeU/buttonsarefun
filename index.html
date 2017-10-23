@@ -29,9 +29,45 @@
     </head>
     <body>
 	
+	<style>
+      body{
+        background-color:tan;
+      }
+      #hb{
+        opacity:0;
+      }
+    </style>
 	
-	
-	
+	 <h1 id=h1>
+      Find The Button That Changes The Background!
+    </h1>
+    <button type="button" onclick='document.getElementById("h1").innerHTML = "Find The Button That Changes The Title Back"'>Click Me!</button>
+    
+    <button id="b1" type="button" onclick='document.getElementById("b1").innerHTML = "I am dead"'>Click Me!</button>
+    
+    <button type="button" onclick='document.getElementById("b1").innerHTML = "I am alive"'>Click Me!</button>
+    
+    <button id="b2"type="button" onclick='document.getElementById("b2").innerHTML = "I do nothing"'>Click Me!</button>
+    <br>
+    <button type="button" onclick='document.getElementById("b2").innerHTML = "I Change The Background :)"'>Click Me!</button>
+    
+    <button id=1 type="button" ondblclick='document.getElementById("h1").innerHTML = "Hint The Button Is Invisiable"'>Click Me</button>
+    
+    <button type="button" onclick='document.getElementById("h1").innerHTML = "Find The Button That Changes The Background!"'>Click Me!</button>
+    
+    <button id=b3 type="button" onclick='document.getElementById("b3").innerHTML = "I Do Not Change The Background"'>Click Me!</button>
+    <br>
+    <button type="button" onclick='document.getElementById("h1").innerHTML = "Hellow, Oh Did I Surprize You?"'>Click Me!</button>
+    
+    <button type="button" onclick='document.getElementById("1").innerHTML = "Click me twice"'>Click Me!</button>
+    
+    <button id=4 type="button" onclick='document.getElementById("3").innerHTML = "Hi"'>Click Me!</button>
+    
+    <button id=3 type="button" onclick='document.getElementById("4").innerHTML = "I am no help"'>Click Me!</button>
+    <br>
+    <br>
+    <br>
+    <button id=hb type="button" onclick='document.getElementById("h1").innerHTML = "You Did It"; document.body.style.background = "tomato"'>Click Me!</button>
 	
 	
 	
