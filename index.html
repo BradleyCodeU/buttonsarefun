@@ -1,6 +1,7 @@
 <html>
     <head>
-		<title>Buttons Are Fun</title>
+		<title>Buttons Are Really Fun</title>
+		<link rel="icon" href="http://www.dreams.metroeve.com/wp-content/uploads/2017/03/dreams.metroeve_unnamed-1.png">
         <style>
           
 	          #mybutton {
@@ -34,6 +35,7 @@
         opacity:0;
       }
     </style>
+	<link rel="stylsheet" type="text/css" href="StephensCSS.css">
     </head>
     <body>
 	
@@ -91,6 +93,31 @@
         This is box2
       </div>
 
+	
+	<!-- Start of Stephens Code !-->
+	<center>
+		<button id="s1" onclick="colorRand()">Color</button>
+		<button id="s2" onclick="sizeRand()">Size</button>
+		<button id="s3" onclick="marginRand()">Margin</button>
+		<button id="s4" onclick="document.getElementsByTagName('body')[0].style.backgroundColor = rgb(getRandomInt(0,255), getRandomInt(0,255), getRandomInt(0,255));">Background</button>
+		<button id="s5" onclick="switchRand()">Switch</button>
+		<button id="s6" onclick="opacityRand()">Opacity</button>
+		<button id="s7" onclick="fontColorRand()">Font Color</button>
+		<button id="s8" onclick="toggle()">Toggle Stats</button>
+		<button id="s9" onclick="document.location.reload(true)">Refresh</button>
+		<button id="s10" onclick="window.close()">Close</button>
+		<button id="s11" onclick="allRand()">Do All Randoms</button>
+		<button id="s12" onclick="rand()">Random</button>
+	</center>
+	
+	<center>
+		<button id="win" disabled onclick="alert('You Win!');document.location.reload(true)">Press to win</button>
+	</center>
+	
+	<div id="clicks" style="visibility='hidden'"></div>
+	<!-- End of Stephens Code !-->
+
+
 	  <img id="image" src="https://i.ytimg.com/vi/IvH6jh8RyI8/maxresdefault.jpg" height=100>
 
 		<button id="button1" type="button" onclick='document.getElementById("h1").innerHTML = "Can you not read? I said not to click it"'>Don't Click Me!</button>
@@ -120,6 +147,7 @@
 	  
 	  
       
+
   <script>
     var points = 0;
     
@@ -142,9 +170,7 @@
  	        return Math.floor(Math.random() * 900)+100;
  	    }
  	    randomize();
-    
-    
-    
  	</script>
+	<script type="text/javascript" src="StephensScript.js"></script>
  	</body>
 </html>
