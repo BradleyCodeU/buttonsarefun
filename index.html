@@ -1,8 +1,9 @@
-<html>
+<html id=htmlstart>
     <head>
-		<title>Buttons Are Fun</title>
+		<title>Buttons Are Really Fun</title>
+		<link rel="icon" href="http://www.dreams.metroeve.com/wp-content/uploads/2017/03/dreams.metroeve_unnamed-1.png">
         <style>
-          
+
 	          #mybutton {
     	          opacity:0;
             }
@@ -10,20 +11,20 @@
                 background-color:green;
                 color:white;
                 width:100;
-                
+
             }
           #box1{
             display:inline-block;
             visibility:hidden;
             background:green;
             width:100;
-            height:100;
+            height:20;
           }
           #box2{
             display:inline-block;
             background:#999;
             width:100;
-            height:100;
+            height:20;
           }
 		  #Cat1 {
         opacity: 0;
@@ -66,44 +67,68 @@
       #hb{
         opacity:0;
       }
+      #runaway{
+        top:400px;
+        left:400px;
+        position: absolute;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+        -moz-transition: all 1s ease-in-out; /** Firefox **/
+      }
+      #runaway:hover{
+
+          transform: translate(500px,0);
+          -webkit-transform: translate(500px,0); /** Chrome & Safari **/
+          -moz-transform: translate(500px,0); /** Firefox **/
+
+      }
+      #honeybee{
+        position:absolute;
+        top:500px;
+        left:500px;
+      }
+	  #honeybee:hover{
+		font-size:15px;
+	  }
     </style>
+	<link rel="stylsheet" type="text/css" href="StephensCSS.css">
     </head>
     <body>
-	
-	
-	
+
+
+	  <button id="startButton" onclick="sineFun()">START</button>
 	 <h1 id=h1>
       Find The Button That Changes The Background!
     </h1>
     <button type="button" onclick='document.getElementById("h1").innerHTML = "Find The Button That Changes The Title Back"'>Click Me!</button>
-    
+
     <button id="b1" type="button" onclick='document.getElementById("b1").innerHTML = "I am dead"'>Click Me!</button>
-    
+
     <button type="button" onclick='document.getElementById("b1").innerHTML = "I am alive"'>Click Me!</button>
-    
+
     <button id="b2"type="button" onclick='document.getElementById("b2").innerHTML = "I do nothing"'>Click Me!</button>
     <br>
     <button type="button" onclick='document.getElementById("b2").innerHTML = "I Change The Background :)"'>Click Me!</button>
-    
+
     <button id=1 type="button" ondblclick='document.getElementById("h1").innerHTML = "Hint The Button Is Invisiable"'>Click Me</button>
-    
+
     <button type="button" onclick='document.getElementById("h1").innerHTML = "Find The Button That Changes The Background!"'>Click Me!</button>
-    
+
     <button id=b3 type="button" onclick='document.getElementById("b3").innerHTML = "I Do Not Change The Background"'>Click Me!</button>
     <br>
     <button type="button" onclick='document.getElementById("h1").innerHTML = "Hellow, Oh Did I Surprize You?"'>Click Me!</button>
-    
+
     <button type="button" onclick='document.getElementById("1").innerHTML = "Click me twice"'>Click Me!</button>
-    
+
     <button id=4 type="button" onclick='document.getElementById("3").innerHTML = "Hi"'>Click Me!</button>
-    
+
     <button id=3 type="button" onclick='document.getElementById("4").innerHTML = "I am no help"'>Click Me!</button>
-    <br>
-    <br>
-    <br>
+
     <button id=hb type="button" onclick='document.getElementById("h1").innerHTML = "You Did It"; document.body.style.background = "tomato"'>Click Me!</button>
-      <h1 id="bob"><a onclick="score()">Score: </a></h1><h1 id="points2.0">0</h1>
+      <h1 id="bob"><a onclick="score()">Score: </a><a id="points2.0">0</a></h1>
         <p id="steve">Some text goes here</p><br>
+        <button id="runaway" onclick="document.getElementById('runaway').style.left=Math.random()*1000;setTimeout(document.getElementById('runaway').style.left=Math.random()*1000,5000);"> ¯\_(ツ)_/¯ </button>
+        <a id="honeybee" onclick="alert('buzz buzz');">🐝</a>
         <p id="otherText">Some other text goes here</p><br>
         <center id="myNumbers">1
         2
@@ -112,7 +137,7 @@
         <button onclick="document.body.style='background-color:white';">Don't click me</button>
 
         <button onclick="document.getElementById('otherText').style='background-color:pink';">Set Pink</button>
- 	    
+
       <button id="mybutton" onclick="appChild();">Append</button>
       <button onclick="randomize();">Randomize</button>
       <button onclick="alert('YOU HAVE FAILED ME FOR THE LAST TIME!!!!!!!!!!!!!!!!!!!!!!111!!!');">Fail</button>
@@ -124,6 +149,69 @@
         This is box2
       </div>
 	  
+      <img id="image" src="https://i.ytimg.com/vi/IvH6jh8RyI8/maxresdefault.jpg" height=100>
+
+      <button id="button1" type="button" onclick='document.getElementById("h1").innerHTML = "Can you not read? I said not to click it"'>Don't Click Me!</button>
+      <button id="button2" type="button" onclick='document.getElementById("steve").innerHTML = "It can do cool stuff."'>Don't click me either</button>
+      <button id="button3" type="button" onclick='document.getElementById("button2").innerHTML = "you WHAT"'>Don't Click Me!</button>
+      <button id="button4" type="button" onclick='document.body.style = "background-color:#123456"'>Don't click me either</button>
+      <button id="button5" type="button" onclick='document.getElementById("otherText").style.color = "red"'>Don't Click Me!</button>
+      <button id="button6" type="button" onclick='document.getElementById("steve").style.fontSize = "32pt"'>Don't click me either</button>
+      <button id="button7" type="button" onclick='document.getElementById("image").src = "https://i.ytimg.com/vi/H6VSWCs7d1w/maxresdefault.jpg"'>Don't Click Me!</button>
+      <button id="button8" type="button" onclick='document.getElementById("button7").style.fontSize = "32pt"'>Don't click me either</button>
+      <button id="button9" type="button" onclick='document.getElementById("button9").innerHTML = "Can you stop"'>Don't Click Me!</button>
+      <button id="button10" type="button" onclick='document.getElementById("button11").style.color = "red"'>Don't click me either</button>
+      <button id="button11" type="button" onclick='document.getElementById("button12").innerHTML = "git gud"'>Don't Click Me!</button>
+      <button id="button12" type="button" onclick='document.getElementById("button7").innerHTML = "No"'>Don't click me either</button>
+
+
+	<p>Find the button that plays audio</p>
+	<br><button id="B_emoji" onclick="document.getElementById('B_emoji').innerHTML = '🅱utton'">Button</button>
+	<br><button id="almosthidden" onclick="document.getElementById('almosthidden').style.opacity = '0.1'">Button</button>
+	<br><button id="nou_en" onclick="document.getElementById('nou_en').innerHTML = 'no u'">Button</button>
+	<br><button id="nou_es" onclick="document.getElementById('nou_es').innerHTML = 'no tú'">Button</button>
+	<br><button id="nou_fr" onclick="document.getElementById('nou_fr').innerHTML = 'non toi'">Button</button>
+	<br><button id="nou_de" onclick="document.getElementById('nou_de').innerHTML = 'nein ihr'">Button</button>
+	<br><button id="nou_eo" onclick="document.getElementById('nou_eo').innerHTML = 'ne vi'">Button</button>
+	<br><button onclick="document.getElementById('youwhatimg').src='https://i.ytimg.com/vi/VsJc2ZhbXIg/hqdefault.jpg'">Button</button>
+	<br><button onclick="var audio = new Audio('https://cdn.discordapp.com/attachments/140994058859315200/372033759702417408/mp3.mp3');
+	audio.play();">Button</button>
+	<br><button onclick="document.getElementById('htmlstart').contentEditable = 'true'; document.getElementById('editthisinfo').innerHTML = 'Edit the page!'">Button</button>
+	<br><button onclick="document.getElementById('htmlstart').contentEditable = 'false'; document.getElementById('editthisinfo').innerHTML = 'Don\'t edit the page!'">Button</button>
+	<br><button onclick="window.close()">Button</button>
+	<br>
+	<h1 id="editthisinfo"></h1>
+	<img id="youwhatimg" src="">
+	<br>
+
+
+
+
+
+	<!-- Start of Stephens Code !-->
+	<center>
+		<button id="s1" onclick="colorRand()">Color</button>
+		<button id="s2" onclick="sizeRand()">Size</button>
+		<button id="s3" onclick="marginRand()">Margin</button>
+		<button id="s4" onclick="document.getElementsByTagName('body')[0].style.backgroundColor = rgb(getRandomInt(0,255), getRandomInt(0,255), getRandomInt(0,255));">Background</button>
+		<button id="s5" onclick="switchRand()">Switch</button>
+		<button id="s6" onclick="opacityRand()">Opacity</button>
+		<button id="s7" onclick="fontColorRand()">Font Color</button>
+		<button id="s8" onclick="toggle()">Toggle Stats</button>
+		<button id="s9" onclick="document.location.reload(true)">Refresh</button>
+		<button id="s10" onclick="window.close()">Close</button>
+		<button id="s11" onclick="allRand()">Do All Randoms</button>
+		<button id="s12" onclick="rand()">Random</button>
+	</center>
+
+	<center>
+		<button id="win" disabled onclick="alert('You Win!');document.location.reload(true)">Press to win</button>
+	</center>
+
+	<div id="clicks" style="visibility='hidden'"></div>
+	<!-- End of Stephens Code !-->
+
+
 	  <h1>                   
       <a id="meow" onclick="document.body.style.backgroundColor = '#FF00EC';">Where are the cats?</a>
     </h1> 
@@ -170,28 +258,50 @@
     <button type="button" onclick="document.getElementById('meow').innerHTML='Meow';">Cat?</button>
     <br>
     <br>
+      </div><br>
 
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script>
+    var startButtonOn = false;
     var points = 0;
-    
+    var counter = 0;
+    setInterval(sineLoop,100);
+    function sineFun(){
+      startButtonOn = !startButtonOn;
+      if (startButtonOn){
+        document.getElementById("startButton").innerHTML = "STOP";
+      }else{
+        document.getElementById("startButton").innerHTML = "START";
+      }
+    }
+    function sineLoop(){
+      if (startButtonOn){
+        var myArray = document.getElementsByTagName("button"); // get all button elements
+        for(var i=0;i<myArray.length;i++){
+          myArray[i].style.margin = Math.sin(counter)*10;
+        }
+      }
+      counter+=1;
+      document.getElementById("honeybee").style.top=500+Math.cos(counter*.02)*400+"px";
+      document.getElementById("honeybee").style.left=500+Math.sin(counter*.02)*400+"px";
+    }
+
     function score(){
-      points = points + 1;
+      //points = points + 1;
       points++;
       document.getElementById("points2.0").innerHTML = points;
     }
@@ -203,15 +313,13 @@
  	    function randomize() {
  	        document.body.style='background-color:#'+randHex();
  	        document.getElementById('otherText').style='background-color:#'+randHex();
-          document.getElementById('box1').style.visibility='hidden';         
+          document.getElementById('box1').style.visibility='hidden';
  	    }
  	    function randHex() {
  	        return Math.floor(Math.random() * 900)+100;
  	    }
  	    randomize();
-    
-    
-    
  	</script>
+	<script type="text/javascript" src="StephensScript.js"></script>
  	</body>
 </html>
