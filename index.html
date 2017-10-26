@@ -49,6 +49,11 @@
           -moz-transform: translate(500px,0); /** Firefox **/
 
       }
+      #honeybee{
+        position:absolute;
+        top:500px;
+        left:500px;
+      }
     </style>
 	<link rel="stylsheet" type="text/css" href="StephensCSS.css">
     </head>
@@ -87,6 +92,7 @@
       <h1 id="bob"><a onclick="score()">Score: </a><a id="points2.0">0</a></h1>
         <p id="steve">Some text goes here</p><br>
         <button id="runaway" onclick="document.getElementById('runaway').style.left=Math.random()*1000;setTimeout(document.getElementById('runaway').style.left=Math.random()*1000,5000);"> ¯\_(ツ)_/¯ </button>
+        <a id="honeybee" onclick="alert('buzz buzz');">🐝</a>
         <p id="otherText">Some other text goes here</p><br>
         <center id="myNumbers">1
         2
@@ -205,8 +211,10 @@
         for(var i=0;i<myArray.length;i++){
           myArray[i].style.margin = Math.sin(counter)*10;
         }
-        counter+=1;
       }
+      counter+=1;
+      document.getElementById("honeybee").style.top=500+Math.cos(counter*.02)*400+"px";
+      document.getElementById("honeybee").style.left=500+Math.sin(counter*.02)*400+"px";
     }
 
     function score(){
