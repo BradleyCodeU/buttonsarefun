@@ -1,5 +1,15 @@
 <html id=htmlstart>
     <head>
+	<style>
+      #imagetwo{
+        visibility: hidden
+      }
+      
+      #image{
+        visibility: hidden
+      }
+    
+    </style>
 		<title>Buttons Are Really Fun</title>
 		<link rel="icon" href="http://www.dreams.metroeve.com/wp-content/uploads/2017/03/dreams.metroeve_unnamed-1.png">
         <style>
@@ -488,5 +498,28 @@
    <button   onclick="document.getElementById('my image').src='https://media3.s-nbcnews.com/i/newscms/2016_05/964556/betty-white-dab-today-tease-160207_288cb9587f95446b9a1fdfacaf1cbbdc.jpg'">Click Me!</button>
    
    <img id="my image" src="#" style="width:50%;"> 
+   
+   
+style="background-color:powderblue;">
+    <center>
+      <img id="imagetwo" src="http://freshsabjimandi.com/wp-content/uploads/2017/04/Tomato.jpg" width="250" height="250">
+      <img id="image"  src="https://i.pinimg.com/736x/8b/2d/f9/8b2df96d13862a17303631965aa74b07--poked-you-quotes-images.jpg" width="250" height="250"> 
+    </center>
+    <h1 id="text">Find the button that changes this text.</h1>
+    <p>
+      
+    </p>
+    <button type="button" onclick= "document.body.style='background-color:red;' "> Click Me!  </button>
+    <button id="change" type="button" onclick="document.getElementById('text').innerHTML = 'Congratulations! Now find the button that shows a picture of a duck'"> Click Me!  </button>
+    <button id="hide" type="button" onclick= "document.getElementById('hide').style.visibility='hidden';"> Click Me!  </button>
+    <button id="changebutton" type="button" onclick= "document.getElementById('changebutton').innerHTML = 'I don't do anything'" > Click Me!  </button>
+    <button type="button" onclick= "document.getElementById('image').style.visibility='visible'; document.getElementById('text').innerHTML = 'Congratulations! Now find the button that changes the Background color to tomato'"> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:lightblue;' "> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:orange;' "> Click Me!  </button>
+    <button type="button" onclick= "document.getElementById('imagetwo').style.visibility='visible'; document.body.style='background-color:tomato;'"> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:lightgreen;' "> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:green;' "> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:lightblue;' "> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:purple;' "> Click Me!  </button>
 
   </body>
