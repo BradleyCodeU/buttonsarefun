@@ -1,5 +1,15 @@
-﻿<html id=htmlstart>
+<html id=htmlstart>
     <head>
+	<style>
+      #imagetwo{
+        visibility: hidden
+      }
+      
+      #image{
+        visibility: hidden
+      }
+    
+    </style>
 		<title>Buttons Are Really Fun</title>
 		<link rel="icon" href="http://www.dreams.metroeve.com/wp-content/uploads/2017/03/dreams.metroeve_unnamed-1.png">
         <style>
@@ -93,6 +103,40 @@
 	  #honeybee:hover{
 		font-size:15px;
 	  }
+
+
+
+	        #b37{
+	          display:none;
+	        }
+	        #b38{
+	           display:none;
+	        }
+	        #b39{
+	          display:none;
+	        }
+	        #b40{
+	          display:none;
+	        }
+	        #b41{
+	          display:none;
+	        }
+	        #b42{
+	          display:none;
+	        }
+	        #b43{
+	          display:none;
+	        }
+	        #b44{
+	          display:none;
+	        }
+	        #b45{
+	          display:none;
+	        }
+	        #b46{
+	          display:none;
+	        }
+
     </style>
 	<link rel="stylsheet" type="text/css" href="StephensCSS.css">
     </head>
@@ -130,7 +174,7 @@
     <button id=hb type="button" onclick='document.getElementById("h1").innerHTML = "You Did It"; document.body.style.background = "tomato"'>Click Me!</button>
       <h1 id="bob"><a onclick="score()">Score: </a><a id="points2.0">0</a></h1>
         <p id="steve">Some text goes here</p><br>
-        <button id="runaway" onclick="document.getElementById('runaway').style.left=Math.random()*1000;setTimeout(document.getElementById('runaway').style.left=Math.random()*1000,5000);"> ¯\_(ツ)_/¯ </button>
+        <button id="runaway" onclick="document.getElementById('runaway').style.left=Math.random()*1000;setTimeout(document.getElementById('runaway').style.left=Math.random()*1000,5000);"> ¯\_(ツ)_/¯ </button>		 +        <button id="runaway" onclick="document.getElementById('runaway').style.left=Math.random()*1000;setTimeout(document.getElementById('runaway').style.left=Math.random()*1000,5000);"> ¯\_(?)_/¯ </button>
         <a id="honeybee" onclick="alert('buzz buzz');">🐝</a>
         <p id="otherText">Some other text goes here</p><br>
         <center id="myNumbers">1
@@ -151,7 +195,7 @@
       <div id="box2">
         This is box2
       </div>
-	  
+
       <img id="image" src="https://i.ytimg.com/vi/IvH6jh8RyI8/maxresdefault.jpg" height=100>
 
       <button id="button1" type="button" onclick='document.getElementById("h1").innerHTML = "Can you not read? I said not to click it"'>Don't Click Me!</button>
@@ -169,8 +213,7 @@
 
 
 	<p>Find the button that plays audio</p>
-	<br><button id="B_emoji" onclick="document.getElementById('B_emoji').innerHTML = '🅱utton'">Button</button>
-	<br><button id="almosthidden" onclick="document.getElementById('almosthidden').style.opacity = '0.1'">Button</button>
+	<br><button id="B_emoji" onclick="document.getElementById('B_emoji').innerHTML = '🅱utton'">Button</button>	<br><button id="almosthidden" onclick="document.getElementById('almosthidden').style.opacity = '0.1'">Button</button>
 	<br><button id="nou_en" onclick="document.getElementById('nou_en').innerHTML = 'no u'">Button</button>
 	<br><button id="nou_es" onclick="document.getElementById('nou_es').innerHTML = 'no tú'">Button</button>
 	<br><button id="nou_fr" onclick="document.getElementById('nou_fr').innerHTML = 'non toi'">Button</button>
@@ -186,6 +229,46 @@
 	<h1 id="editthisinfo"></h1>
 	<img id="youwhatimg" src="">
 	<br>
+	 <h1>
+      Find the button that changes the background to blue
+    </h1>
+ 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='red';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='green';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='brown';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='orange';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='yellow';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='black';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='none';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='red';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='blue';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='green';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='purple';">Click Me!
+    </button> 
+    <button
+    type="button" onclick="document.body.style.backgroundColor='grey';">Click Me!
+    </button> 
 
 
 
@@ -215,9 +298,9 @@
 	<!-- End of Stephens Code !-->
 
 
-	  <h1>                   
+	  <h1>
       <a id="meow" onclick="document.body.style.backgroundColor = '#FF00EC';">Where are the cats?</a>
-    </h1> 
+    </h1>
     <button type="button" onclick='document.getElementById("Cat1").style.opacity="1";'>Cat?</button>
     <br>
     <img id=Cat1 src="https://i.pinimg.com/736x/8c/6e/a3/8c6ea333c4e9a6fe9c13b06e3d06797d--red-cat-cute-pets.jpg" width="150px" opacity="0">
@@ -266,7 +349,7 @@
 
 
     <button onclick="alert('Hey, My Babe!!!')">
-      Ariana Grande 
+      Ariana Grande
     </button>
     <button onclick="alert('Bye')">
      Any Celebrity
@@ -287,21 +370,21 @@
      AG4
     </button>
   <button onclick="alert('When Queen Ariana Grande Was Born!!!')">
-    Saturday June 26 1993 At 12:34 p.m. At St. Judes Hospital in Boca Raton, Florida 
+    Saturday June 26 1993 At 12:34 p.m. At St. Judes Hospital in Boca Raton, Florida
     </button>
     <button onclick="alert('Queen Ariana Grande')">
-     Who's the Queen Pop 
+     Who's the Queen Pop
     </button>
      <button onclick="alert('I am SHOOK!!!')">
     When she hits those high notes
     </button>
     <button onclick="alert('I Get Goose Bumps')">
-    When she releases a new Music Video 
+    When she releases a new Music Video
     </button>
     <button onclick="alert('I Am Overjoyed')">
     When She Smile!!!!
     </button>
-    
+
 
 
 
@@ -364,5 +447,136 @@
  	    randomize();
  	</script>
 	<script type="text/javascript" src="StephensScript.js"></script>
- 	</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br>
+
+
+    <h1>find the button that changes the background to red</h1>
+    <h2 id="demo">
+    </h2>
+
+    <img id="myImage" src="https://media.giphy.com/media/l0K4k1O7RJSghST3a/giphy.gif" style="width:325px">
+
+    <br><br><br>
+
+    <button id="b1" onclick="document.getElementById('demo').innerHTML = 'very cold!'; document.getElementById('b11').style.display='none'; document.getElementById('b9').style.display='none'; document.getElementById('b8').style.display='none'; document.getElementById('b3').style.display='none'">click me</button>
+
+    <button id="b2" onclick="document.getElementById('demo').innerHTML = 'chilly!'; document.getElementById('b10').style.display='block'">click me</button>
+
+    <button id="b3" onclick="document.getElementById('demo').innerHTML = 'chilly!'; document.body.style='background-color:green;'; document.getElementById('b10').style.display='none'">click me</button>
+
+    <button id="b4" onclick="document.getElementById('demo').innerHTML = 'very hot!'; document.getElementById('b44').style.display='block'; document.getElementById('b45').style.display='block'; document.getElementById('b46').style.display='block'">click me</button>
+
+    <button id="b5" onclick="document.getElementById('demo').innerHTML = 'cold!'; document.getElementById('b11').style.display='block'; document.getElementById('b3').style.display='block'">click me</button>
+
+    <button id="b6" onclick="document.getElementById('demo').innerHTML = 'cold!'; document.getElementById('b5').style.display='block'; document.getElementById('b37').style.display='none'">click me</button>
+
+    <button id="b7" onclick="document.getElementById('demo').innerHTML = 'chilly!'; document.getElementById('b2').style.display='block'; document.getElementById('b10').style.display='block'">click me</button>
+
+    <button id="b8" onclick="document.getElementById('demo').innerHTML = 'cold'; document.body.style='background-color:blue;'">click me</button>
+
+    <button id="b9" onclick="document.getElementById('demo').innerHTML = 'on fire!'; document.getElementById('b37').style.display='block'; document.getElementById('b38').style.display='block'; document.getElementById('b39').style.display='block'; document.getElementById('b40').style.display='block'; document.getElementById('b41').style.display='block'; document.getElementById('b42').style.display='block'; document.getElementById('b43').style.display='block'; document.getElementById('b44').style.display='block'; document.getElementById('b45').style.display='block'; document.getElementById('b46').style.display='block'; document.getElementById('b9').style.display='none'">click me</button>
+
+    <button id="b10" onclick="document.getElementById('demo').innerHTML = 'so hot!'; document.getElementById('b9').style.display='block';; document.getElementById('b2').style.display='none'">click me</button>
+
+    <button id="b11" onclick="document.getElementById('demo').innerHTML = 'warm!'; document.getElementById('b38').style.display='block'; document.getElementById('b39').style.display='block'; document.getElementById('b2').style.display='none'">click me</button>
+
+    <button id="b12" onclick="document.getElementById('demo').innerHTML = 'ice cold; document.getElementById('b10').style.display='none'; document.getElementById('b5').style.display='none'; document.getElementById('b2').style.display='none'; document.getElementById('b9').style.display='none'">click me</button>
+
+
+
+    <button id="b38" onclick="document.getElementById('demo').innerHTML = 'wrong!'; document.getElementById('b37').style.display='none'">click me</button>
+    <button id="b39" onclick="document.getElementById('demo').innerHTML = 'close!'">click me</button>
+    <button id="b40" onclick="document.getElementById('demo').innerHTML = 'wrong!'">click me</button>
+    <button id="b41" onclick="document.getElementById('demo').innerHTML = 'ice!'; document.getElementById('b37').style.display='none'">click me</button>
+    <button id="b42" onclick="document.getElementById('demo').innerHTML = 'burning hot!'">click me</button>
+
+
+
+
+    <button id="b37" onclick="document.getElementById('demo').innerHTML = 'your correct!'; document.body.style='background-color:red;'">click me</button>
+
+
+
+
+    <button id="b43" onclick="document.getElementById('demo').innerHTML = 'burning hot!'">click me</button>
+    <button id="b44" onclick="document.getElementById('demo').innerHTML = 'still hot!'; document.getElementById('b37').style.display='block'; document.getElementById('b44').style.display='none'">click me</button>
+    <button id="b45" onclick="document.getElementById('demo').innerHTML = 'warm!'; document.body.style='background-color:blue;'">click me</button>
+    <button id="b46" onclick="document.getElementById('demo').innerHTML = 'very cold!'; document.getElementById('b37').style.display='none'">click me</button>
+<h1>button game!</h1>
+
+<button onclick="document.body.style.backgroundColor='blue';">start</button>
+  <p id="demo">Find the button that changes the background!</p>
+<button onclick="document.body.style.backgroundColor='red';">keep pressing</button>
+<button onclick="document.body.style.backgroundColor='pink';"> you got it!</button>
+<button onclick="document.body.style.backgroundColor='orange';"> Almost there!</button>          
+    <button onclick="document.body.style.backgroundColor='black';"> hurry!</button>  
+<button onclick="document.body.style.backgroundColor='tomato';"> press!</button>  
+  <button onclick="document.body.style.backgroundColor='violet';"> Next color!!</button>  
+  <button onclick="document.body.style.backgroundColor='coral';"> Next color!!</button> 
+  <button onclick="document.body.style.backgroundColor='beige';"> color!!</button> 
+  <button onclick="document.body.style.backgroundColor='violet;"> try next time!!</button> 
+  <button onclick="document.body.style.backgroundColor='aqua';"> keep going!!</button> 
+   <button onclick="document.body.style.backgroundColor='darkcyan';"> end!!</button> 
+	<br><br><br><br>
+ <h1>
+  Make The Background <a id="dc4">Green</a> and find Betty White
+   </h1>
+    <h2>
+      
+      <p id="dc56">
+         You Got This!!!
+      </p>
+    </h2>
+  
+<button id="dc765" onclick="document.getElementById('dc765').innerHTML = 'Try Again' ">Click Me!</button>
+<button id="dc1"  onclick="document.getElementById('dc1').innerHTML = 'Nope, Try Again'">Click Me!</button>
+<button id="dc02" onclick="document.getElementById('dc02').innerHTML = 'Close But No Cigar'">Click Me!</button>
+  <button id="dc456"  onclick="document.getElementById('dc456').innerHTML = 'Wrong'">Click Me!</button>
+  <button id="dc87"  onclick="document.getElementById('dc5');document.body.style='background-color:green;'">Click Me!</button>
+  <button id="dc9"  onclick="document.getElementById('dc9').innerHTML = 'Hi'">Click Me!</button>
+   <button id="dc2-"  onclick="document.getElementById('dc5');document.body.style='background-color:black;'">Click Me!</button>
+   <button id="dc3"  onclick="document.getElementById('dc3').innerHTML = 'Nice Try'">Click Me!</button>
+   <button id="dc48" onclick="document.getElementById('dc4').style.color = 'green'">Click Me!</button>
+   <button id="dc58" onclick="document.getElementById('dc58').innerHTML = 'lol, Not This One'">Click Me!</button>
+   <button id="dc6" onclick="document.getElementById('dc56').innerHTML = 'Oof'">Click Me!</button>
+   <button id="dc7-" onclick="document.getElementById('dc56');document.body.style='background-color:purple;'">Click Me!</button>
+   <button id="dc8" onclick="document.getElementById('dc8').style.backgroundColor = 'blue'">Click Me!</button>
+   <button   onclick="document.getElementById('my image').src='https://media3.s-nbcnews.com/i/newscms/2016_05/964556/betty-white-dab-today-tease-160207_288cb9587f95446b9a1fdfacaf1cbbdc.jpg'">Click Me!</button>
+   
+   <img id="my image" src="#" style="width:50%;"> 
+   
+   
+style="background-color:powderblue;">
+    <center>
+      <img id="imagetwo" src="http://freshsabjimandi.com/wp-content/uploads/2017/04/Tomato.jpg" width="250" height="250">
+      <img id="image"  src="https://i.pinimg.com/736x/8b/2d/f9/8b2df96d13862a17303631965aa74b07--poked-you-quotes-images.jpg" width="250" height="250"> 
+    </center>
+    <h1 id="text">Find the button that changes this text.</h1>
+    <p>
+      
+    </p>
+    <button type="button" onclick= "document.body.style='background-color:red;' "> Click Me!  </button>
+    <button id="change" type="button" onclick="document.getElementById('text').innerHTML = 'Congratulations! Now find the button that shows a picture of a duck'"> Click Me!  </button>
+    <button id="hide" type="button" onclick= "document.getElementById('hide').style.visibility='hidden';"> Click Me!  </button>
+    <button id="changebutton" type="button" onclick= "document.getElementById('changebutton').innerHTML = 'I don't do anything'" > Click Me!  </button>
+    <button type="button" onclick= "document.getElementById('image').style.visibility='visible'; document.getElementById('text').innerHTML = 'Congratulations! Now find the button that changes the Background color to tomato'"> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:lightblue;' "> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:orange;' "> Click Me!  </button>
+    <button type="button" onclick= "document.getElementById('imagetwo').style.visibility='visible'; document.body.style='background-color:tomato;'"> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:lightgreen;' "> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:green;' "> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:lightblue;' "> Click Me!  </button>
+    <button type="button" onclick= "document.body.style='background-color:purple;' "> Click Me!  </button>
+
+  </body>
